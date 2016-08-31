@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Test Pizza</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Please Enter Your Information: </h2>
+        <form id="new-customer">
+          <div class="form-group">
+                <label for="new-first-name">First name</label>
+                <input type="text" class="form-control" id="new-first-name">
+          </div>
+          <div class="form-group">
+            <label for="new-last-name">Last name</label>
+            <input type="text" class="form-control" id="new-last-name">
+          </div>
+          <p class="warning">
+
+          </p>
+          <!-- <div id="new-addresses">
+            <div class="new-address">
+              <div class="form-group">
+                <label for="new-street">Street</label>
+                <input type="text" class="form-control new-street">
+              </div>
+              <div class="form-group">
+                <label for="new-city">City</label>
+                <input type="text" class="form-control new-city">
+              </div>
+              <div class="form-group">
+                <label for="new-state">State</label>
+                <input type="text" class="form-control new-state">
+              </div>
+              <div class="form-group">
+                <label for="new-zip">Zip Code</label>
+                <input type="number" min=0 class="form-control new-zip">
+              </div>
+                <p id="warning">
+
+                </p>
+            </div>
+          </div>
+          <!-- User Info End, Pizza choice start -->
+        <!-- <h2>Choose from our Specialty Pizza: </h2>
+        <div class="new-pizza">
+          <div class="form-group" id="new-specialty">
+            <h4>Choose Your Specialty Pizza ($8.00 per pizza): </h4>
+            <form >
+              <label class="checkbox-inline">
+                <input type="checkbox" name="specialty">Blini Smoked Salmon Pizza
+                <img src="img/Blini-Pizza.jpg" alt="Salmon Pizza" />
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" name="specialty">Spicy Thai's Peanut Pizza
+                <img src="img/Thai pizza.jpg" alt="spicy pizza" />
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" name="specialty">Vietnamese Bannh Mi Pizza
+                <img src="img/Banh-Pizza.jpg" alt="vietnamese pizza" />
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" name="specialty">Bacon and Bluecheese Pizza
+                <img src="img/Bacon-Pizza.jpg" alt="pig &amp; cheese pizza" />
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" name="specialty">Rainbow Fruit Dessert Pizza
+                <img src="img/Dessert-Pizza.jpg" alt="dessert pizza" />
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+        <h2 class="col-header">Create Your Own Pizza:</h2>
+        <div class="new-pizza">
+          <div class="col-sm-6">
+            <div class="form-group" id="new-size">
+              <h4>Choose Your Size:</h4>
+              <div class="radio-inline">
+                <label>
+                  <input type="radio" name="size" value="small" >10" Small $12.00
+                </label>
+              </div>
+              <div class="radio-inline">
+                <label>
+                  <input type="radio" name="size" value="medium">14" Medium $15.00
+                </label>
+              </div>
+              <div class="radio-inline">
+                <label>
+                  <input type="radio" name="size" value="large">18" Large $18.00
+                </label>
+              </div>
+            </div>
+            <div class="form-group" id="new-sauce">
+              <h4>Choose Your Sauce (No extra charge)</h4>
+              <form>
+                <label class="checkbox-inline" for="marinara">
+                  <input type="checkbox" name="sauce" value="0">Marinara
+                </label>
+                <label class="checkbox-inline" for="alfredo">
+                  <input type="checkbox" name="sauce" value="0">Alfredo
+                </label>
+                <label class="checkbox-inline" for="spicy">
+                  <input type="checkbox" name="sauce" value="0">Spicy
+                </label>
+              </form>
+            </div>
+            <div class="form-group" id="new-toppings">
+              <h4>Choose Your Topping ($1.00 per Topping)</h4>
+              <form>
+                <label class="checkbox-inline" for="pepperoni">
+                  <input type="checkbox" name="toppings" value="1">Pepperoni
+                </label>
+                <label class="checkbox-inline" for="italianSausage">
+                  <input type="checkbox" name="toppings" value="1">Italian Sausage
+                </label>
+                <label class="checkbox-inline" for="bacon">
+                  <input type="checkbox" name="toppings" value="1">baconname="toppings"
+                </label>
+                <label class="checkbox-inline" for="chicken">
+                  <input type="checkbox" name="toppings" value="1">Chicken
+                </label>
+                <label class="checkbox-inline" for="extra-cheese">
+                  <input type="checkbox" name="toppings" value="1">Extra Cheese
+                </label>
+                <label class="checkbox-inline" for="blue-cheese">
+                  <input type="checkbox" name="toppings" value="1">Blue Cheese
+                </label>
+              </form>
+            </div>
+            <div class="form-group" id="new-veggieToppings">
+              <h4>Choose Your Topping ($1.00 per Topping)</h4>
+                <label class="checkbox-inline" for="mushroom">
+                  <input type="checkbox" name="veggiesToppings" value="1">Mushroom
+                </label>
+                <label class="checkbox-inline" for="arugura">
+                  <input type="checkbox" name="veggiesToppings" value="1">Arugura
+                </label>
+                <label class="checkbox-inline" for="tomatoes">
+                  <input type="checkbox" name="veggiesToppings" value="1">Tomatoes
+                </label>
+                <label class="checkbox-inline" for="basil">
+                  <input type="checkbox" name="veggiesToppings" value="1">Basil
+                </label>
+                <label class="checkbox-inline" for="artichokes">
+                  <input type="checkbox" name="veggiesToppings" value="1">Artichokes
+                </label>
+                <label class="checkbox-inline" for="Garlic">
+                  <input type="checkbox" name="veggiesToppings" value="1">Garlic
+                </label>
+                <label class="checkbox-inline" for="basil">
+                  <input type="checkbox" name="veggiesToppings" value="1">Basil
+                </label>
+            </div>
+              <form>
+                <div class="form-group">
+                  <label for="quantity"><h4>Pizza Quantity: </h4></label>
+                  <input type="number" min=1 class="form-control quantity" placeholder="Please enter equal or more than 1">
+                </div>
+              </form>
+            <div class="form-group" id="new-getOrder">
+              <h4>Choose one Opton:</h4>
+              <div class="radio-inline">
+                <label>
+                  <input type="radio" name="carry-deliver"  value="0" >CarryOut
+                </label>
+              </div>
+              <div class="radio-inline">
+                <label>
+                  <input type="radio" name="carry-deliver"  value="0">Free Delivery (Please Tip the Driver!)
+                </label>
+              </div>
+            </div>
+          </div>
+        </div> --> -->
+
+        <button type="submit" class="btn btn-primary btn-lg" id="order">Order</button>
+        </form>
+
+        <div class="totalPrice">
+          <h2>Customer Order Detail: </h2>
+          <ul id="customer">
+
+          </ul>
+        <div id="show-info">
+           <h2></h2>
+           <p> Address:</p>
+           <ul id="addresses">
+
+           </ul>
+           <h4>Here's the total price for your pizza $ <span class="total"></span></h4>
+           <br>
+           <h4>Enjoy! and Thank you for your business.</h4>
+         </div>
+        </div>
+    </div>
+
+  </body>
+</html>
