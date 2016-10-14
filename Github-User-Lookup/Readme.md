@@ -18,11 +18,19 @@ Use the GitHub API to retrieve this information._
 
 
 ## Setup/Installation Requirements
-1. Open PowerShell
-2. >git clone https://github.com/TalayRuk/Github-User-Lookup.git
-3. >cd Addressbook
-4. >dnx kestrel
-1. open [http://localhost:5004](http://localhost:5004) on Chrome web browser
+1.  Open PowerShell
+2.  $ git clone https://github.com/TalayRuk/Github-User-Lookup.git
+3.  $ cd Github-User-Lookup
+4.  $ npm install
+5.  $ bower install
+6.  $ maybe -npm install browser-sync --save-dev? ... but
+7.  $ maybe npm install gulp-sass gulp-sourcemaps --save-dev?
+then run:
+8.  $ gulp build
+9.  $ if there's error
+10. $ run gulp jshint
+11. $ make new .env
+12. open [http://]( ) on Chrome web browser
 
 
 ## Known Bugs
